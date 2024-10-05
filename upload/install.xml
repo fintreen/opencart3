@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<modification>
+    <name>Fintreen Payment Module</name>
+    <code>fintreen_payment</code>
+    <version>1.0.0</version>
+    <author>Your Name</author>
+    <link>https://yourwebsite.com</link>
+    <file path="admin/controller/startup/permission.php">
+        <operation>
+            <search><![CDATA[$extension = array(]]></search>
+            <add position="after"><![CDATA[
+                'extension/payment/fintreen',
+            ]]></add>
+        </operation>
+    </file>
+</modification>
